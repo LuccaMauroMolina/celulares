@@ -1,0 +1,394 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.logo{
+    width: 110px;
+    height: 110px;
+    transform: translateX(15px);
+}
+
+.home{
+    cursor: pointer;
+}
+
+header{
+    background-color: black;
+    display: flex;
+}
+
+svg{
+    color: white;
+    display: flex;
+    align-self: center;
+    transform: translateX(-35px);
+    margin-left: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+}
+
+li{
+    color: white;
+    padding-left: 15px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+a::after{
+    content: "";
+    display: block;
+    background-color: white;
+    width: 90%;
+    margin-top: 3px ;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: all .3s;
+}
+
+a:hover{
+    color: white;
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.nav-input:checked + .listas{
+    background: black;
+}
+
+.listas{
+    text-decoration: none;
+    color: white;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 25px;
+}
+
+.nav-input:checked + .listas{
+    background: black;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-label, .nav-input{
+    display: none;
+}
+
+#fondo{
+    max-width: 100%;
+    height: auto;
+    margin-top: 1px;
+    position: relative;
+}
+
+.fondo img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 1px;
+}
+
+.div-red{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #25d366;
+    border-radius: 50px;
+    margin: 15px;
+}
+
+
+.img-red{
+    width: 60px;
+    border-radius: 25px;
+    height: 60px;
+    background-image: url(./img/whatsapp.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.titulo{
+    color: white;
+    transform: translateX(-40%);
+}
+
+.samsung{
+    width: 350px;
+}
+
+.fondo-2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subtitulo{
+    position: absolute;
+    bottom: 20%;
+    color: white;
+    left: 10.3%;
+}
+
+.tit-mar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.marcas{
+    width: 170px;
+    height: 170px;
+}
+
+.col-lg-12{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-left: 6%;
+}
+
+.carousel, .carousel-inner , .carousel-item , .d-block {
+    height: 450px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10rem; 
+    padding-bottom: 25px;
+}
+
+.card{
+    border: 1px solid black;
+    width: fit-content;
+}
+
+.card-img{
+    width: 260px;
+}
+
+.card-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+}
+
+footer{
+    background-color: black;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-red{
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-span{
+    color: white;
+    padding-right: 15px;
+}
+
+.service-tecnic{
+    background-color: #242323;
+    margin: 50px;
+}
+
+.text-tecnico{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.text-center{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.d-flex{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact{
+    text-align: center;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.form-input{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.input-form{
+    padding: 10px 15px;
+    width: 28.5rem;
+    border: 2px solid black;
+    color: black;
+    border-radius: 4px;
+}
+
+.mensaje{
+    padding: 10px 15px;
+    width: 36rem;
+    padding-bottom: 12rem;
+    border: 2px solid black;
+    color: black;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.input-mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    color: white;
+    width: fit-content;
+    background-color: #CA2614;
+    margin-bottom: 15px;
+    padding: 10px 40px;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    color: white;
+}
+
+/*@media (min-width: 320px) and (max-width:1024px) {    
+    .nav-label{
+        display: block;
+        cursor: pointer;
+    }
+    .listas{
+        position: absolute;
+        top: 80px;
+        bottom: 0;
+        background: black;
+        width: 100%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        clip-path:inset(0 0 0 0);;
+        transition: clip-path 0.5s ease-in-out;
+    }
+    
+    .nav-input:checked + .listas{
+        clip-path: inset(0 0 100% 0);
+    }
+}*/
+
+@media (min-width: 320px) and (max-width:960px) {    
+    .d-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-input{
+        padding-right: 15px;
+        padding-left: 15px
+    }
+
+    .input-form{
+        width: 25rem ;
+    }
+}
+
+@media (max-width: 850px){
+    .input-form{
+        width: 20rem ;
+    }
+}
+
+@media (max-width: 670px){
+    .input-form{
+        width: 16rem ;
+    }
+
+    .mensaje{
+        width: 28rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 320px) and (max-width:480px){
+    .input-form{
+        width: 12rem;
+    }
+
+    .form-input{
+        display: flex;
+        flex-direction: column; padding-right: 15px;
+        padding-left: 15px
+    }
+
+    .mensaje{
+        width: 20rem;
+    }
+
+}
