@@ -78,6 +78,7 @@ li a:hover{
     display: grid;
     grid-auto-flow: column;
     gap: 25px;
+    z-index: 5;
 }
 
 .nav-input:checked + .listas{
@@ -223,6 +224,17 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+.fot-listas{
+    text-decoration: none;
+    color: white;
+    /*display: grid;
+    grid-auto-flow: column;*/
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 5;
 }
 
 .footer-red{
@@ -493,6 +505,7 @@ footer{
     .footer{
         display: flex;
         flex-direction: column;
+        position: relative;
     }
 
     .footer-red{
@@ -507,6 +520,10 @@ footer{
     .titulo{
         position: absolute;
         top: 80px;
+    }
+
+    .icono{
+        display: none;
     }
 }
 
